@@ -1,0 +1,26 @@
+
+.forget-register {
+    
+}
+.forget-register a {
+    color: #333;
+}
+.forget-register .forget-btn{
+    float: right;
+}
+.remember .am-checkbox-agree-label{
+    color: #999;
+}
+.third-area {
+    margin-top: 50px;
+    color: #999;
+}
+.third-area .iconfont{
+    font-size: 60px;
+}
+.icon-qq {
+    color: #5da3e1;
+}
+.icon-weibo {
+    color: #ff7779;
+}
