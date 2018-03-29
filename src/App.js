@@ -9,6 +9,7 @@ import './App.css';
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Greeting from './pages/Greeting'
+import Coffers from './pages/Coffers'
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
             <Route exact path="/" component={Home}/>
             <Route path="/login" component={Login}/>
             <Route path="/greeting" component={Greeting}/>
+            <Route path="/coffers" component={Coffers}/>
         </Switch>
     );
   }

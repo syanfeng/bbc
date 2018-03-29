@@ -1,0 +1,80 @@
+.coffers-container {
+
+}
+.coffers-header {
+    padding: 10px;
+    background: #727272;
+    color: #fff;
+}
+.user-pic {
+    width: 50px;
+    height: 50px;
+}
+.user-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 宫格 */
+.coffers-menu {
+    border-bottom: 1px solid #ddd;
+}
+.coffers-menu .am-flexbox-item {
+    background: #fff;
+    border-right: 1px solid #ddd;
+    margin-left: 0;
+    text-align: center;
+    padding: 15px 0;
+}
+.coffers-menu .am-flexbox-item:last-of-type {
+    border-right: 0;
+}
+.coffers-menu .iconfont {
+    font-size: 40px;
+}
+.coffers-menu h4 {
+    margin-top: 8px;
+}
+
+/* 交易记录 */
+.record-container {
+    text-align: center;
+    background: #fff;
+    padding: 15px 0;
+}
+.record-header {
+    margin-bottom: 10px;
+}
+.record-list {
+    width: 100%;
+    padding: 0 15px;
+}
+.record-list > li {
+    margin: 5px 0;
+}
+.record-list > li > ul > li {
+    display: table-cell;
+    width: 10%;
+}
+
+/* 商品列表 */
+.coffers-container .am-tabs {
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+}
+.goods-list {
+    width: 100%;
+}
+.goods-list .am-list-item .am-list-line .am-list-brief {
+    font-size: 12px;
+}
+.am-list-item img {
+    width: 30px;
+    height: 57px;
+}
+.market-price {
+    text-decoration: line-through;
+}
+.promotion-price {
+    color: orange;
+}
