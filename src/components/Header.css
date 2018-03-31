@@ -24,7 +24,7 @@
 
 .menu {
     position: absolute;
-    right: 30px;
+    right: 15px;
     top: 0;
     height: 50px;
     color: #fff;
@@ -34,4 +34,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+.menu .am-icon {
+    transform: translate(-22px, -50%);
 }

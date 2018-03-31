@@ -12,6 +12,8 @@ import Greeting from './pages/Greeting'
 import Coffers from './pages/Coffers'
 import Mining from './pages/Mining'
 import Exchange from './pages/Exchange'
+import Payment from './pages/Payment'
+import Receiveable from './pages/Receiveable'
 
 
 class App extends Component {
@@ -24,6 +26,8 @@ class App extends Component {
             <Route path="/coffers" component={Coffers}/>
             <Route path="/mining" component={Mining}/>
             <Route path="/exchange" component={Exchange}/>
+            <Route path="/payment" component={Payment}/>
+            <Route path="/receiveable" component={Receiveable}/>
         </Switch>
     );
   }

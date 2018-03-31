@@ -41,12 +41,12 @@ class Coffers extends Component {
         ]
         const goods = [
             {id: '001', thumb: require('../assets/imgs/phone.png'), name: 'KD876', marketPrice: '￥1666元',promotionPrice: '￥1382元+600积分'},
-            {id: '001', thumb: require('../assets/imgs/phone.png'), name: 'KD876', marketPrice: '￥1666元',promotionPrice: '￥1382元+600积分'},
-            {id: '001', thumb: require('../assets/imgs/phone.png'), name: 'KD876', marketPrice: '￥1666元',promotionPrice: '￥1382元+600积分'},
+            {id: '002', thumb: require('../assets/imgs/phone.png'), name: 'KD876', marketPrice: '￥1666元',promotionPrice: '￥1382元+600积分'},
+            {id: '003', thumb: require('../assets/imgs/phone.png'), name: 'KD876', marketPrice: '￥1666元',promotionPrice: '￥1382元+600积分'},
         ]
         return (
             <div className="coffers-container">
-                <Header title="个人金库"/> 
+                <Header title="个人金库" /> 
                 <Flex className="coffers-header" align="start">
                     <div className="user-pic">
                         <img src={require('../assets/imgs/pic.png')} />

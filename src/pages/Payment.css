@@ -1,0 +1,35 @@
+.payment-container {
+    height: 100%;
+    background: #fff;
+}
+.pay-form {
+    margin: 50px 0;
+}
+.pay-form .am-list-item.am-input-item {
+    width: 70%;
+    margin: 0 auto;
+}
+.pay-form .am-list-item .am-input-label.am-input-label-5{
+    width: auto;
+    margin-right: 20px;
+}
+
+.bbc-btn {
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    text-align: center;
+    background: #fff;
+    margin: 0 auto;
+}
+.bbc-btn-blue {
+    background: #10bb9d;
+    border-color: #10bb9d;
+    color: #fff;
+}
+.bbc-btn-blue.am-button-active {
+    background: #0ca88c;
+    border-color: #0ca88c;
+}
+
