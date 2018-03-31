@@ -67,3 +67,8 @@ table {
 .icon-weibo:before { content: "\e62e"; }
 .icon-qq:before { content: "\e64d"; }
 
+
+/* antd 修复 */
+.am-flexbox .am-flexbox-item {
+    z-index: 1;
+}

@@ -1,0 +1,71 @@
+.star-area {
+    width: 100%;
+    height: 300px;
+    background: #ddd;
+}
+.top-left {
+    float: left;
+    margin: 10px 0 0 20px;
+}
+.star-value {
+    color: #108ee9;
+    margin-left: 10px;
+}
+.top-right {
+    float: right;
+    margin: 10px 20px 0 0;
+}
+
+/* 按钮区域 */
+.btn-area {
+    width: 100%;
+    padding: 10px 30px;
+    background: #fff;
+}
+.btn-area .coffers-link {
+    float: right;
+}
+
+/* 排行榜 */
+.ranking-list {
+    position: relative;
+}
+.ranking-list::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    display: block;
+    z-index: 1;
+    transform: scaleY(0.5);
+}
+.table {
+    display: table;
+    width:100%;
+    background: #fff;
+    position: relative;
+    text-align: center;
+}
+.table-row {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+.table-cell {
+    display: table-cell;
+    flex: 1;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.table-cell:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+.gray {
+    background: #eee;
+}
