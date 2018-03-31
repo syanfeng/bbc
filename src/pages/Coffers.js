@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 import { Button, Flex, Grid, WingBlank, List, Tabs } from 'antd-mobile';
 
 import './Coffers.css';
+import biaoqianIcon from '../assets/imgs/biaoqian.svg'
+import paymentcon from '../assets/imgs/payment.svg'
+import exchangeIcon from '../assets/imgs/exchange.svg'
+import tixianIcon from '../assets/imgs/tixian.svg'
 
 import Header from '../components/Header';
 
@@ -15,19 +19,19 @@ class Coffers extends Component {
     render() {
         let data = [
             {
-                icon: 'https://gw.alipayobjects.com/zos/rmsportal/nywPmnTAvTmLusPxHPSu.png',
+                icon: biaoqianIcon,
                 text: `收款`,
             },
             {
-                icon: 'https://gw.alipayobjects.com/zos/rmsportal/nywPmnTAvTmLusPxHPSu.png',
+                icon: paymentcon,
                 text: `付费`,
             },
             {
-                icon: 'https://gw.alipayobjects.com/zos/rmsportal/nywPmnTAvTmLusPxHPSu.png',
+                icon: exchangeIcon,
                 text: `兑换`,
             },
             {
-                icon: 'https://gw.alipayobjects.com/zos/rmsportal/nywPmnTAvTmLusPxHPSu.png',
+                icon: tixianIcon,
                 text: `提现`,
             }
         ];

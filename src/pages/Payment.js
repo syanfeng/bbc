@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { Button, InputItem, WingBlank} from 'antd-mobile';
 
 import './Payment.css';
+import passwordIcon from '../assets/imgs/password.svg'
+import identityIcon from '../assets/imgs/identity.svg'
 
 import Header2 from '../components/Header2';
 
@@ -21,12 +23,13 @@ class Payment extends Component {
                     <InputItem
                         placeholder="付款地址"
                     >
-                        <div style={{ backgroundImage: 'url(https://zos.alipayobjects.com/rmsportal/DfkJHaJGgMghpXdqNaKF.png)', backgroundSize: 'cover', height: '22px', width: '22px' }} />
+                        <div style={{ backgroundImage: 'url('+identityIcon+')', backgroundSize: 'cover', height: '22px', width: '22px' }} />
                     </InputItem>
                     <InputItem
+                        type="password"
                         placeholder="资金密码"
                     >
-                        <div style={{ backgroundImage: 'url(https://zos.alipayobjects.com/rmsportal/DfkJHaJGgMghpXdqNaKF.png)', backgroundSize: 'cover', height: '22px', width: '22px' }} />
+                        <div style={{ backgroundImage: 'url('+passwordIcon+')', backgroundSize: 'cover', height: '22px', width: '22px' }} />
                     </InputItem>
                 </div>
                 <WingBlank>
