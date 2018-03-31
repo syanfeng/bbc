@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 import { Button, Flex, Grid, WingBlank, List, Tabs } from 'antd-mobile';
 
@@ -15,24 +16,33 @@ const Brief = Item.Brief;
 
 
 class Coffers extends Component {
+
+    gridOnClick(_el) {
+        console.log(_el)
+        this.props.history.push(_el.url)
+    }
     
     render() {
         let data = [
             {
                 icon: biaoqianIcon,
                 text: `收款`,
+                url: '/receiveable'
             },
             {
                 icon: paymentcon,
                 text: `付费`,
+                url: '/payment'
             },
             {
                 icon: exchangeIcon,
                 text: `兑换`,
+                url: '/exchange'
             },
             {
                 icon: tixianIcon,
                 text: `提现`,
+                url: ''
             }
         ];
         const tabs = [
@@ -61,7 +71,7 @@ class Coffers extends Component {
                     </Flex.Item>
                     <div>挖矿</div>
                 </Flex> 
-                <Grid data={data} />
+                <Grid data={data} onClick={_el => this.gridOnClick(_el)}/>
                 <div className="record-container">
                     <h3 className="record-header">交易记录</h3>
                     <ul className="record-list">
