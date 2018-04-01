@@ -41,12 +41,14 @@
     text-align: center;
     padding: 15px 0;
 }
-.record-header {
+.record-title {
     margin-bottom: 10px;
 }
 .record-list {
     width: 100%;
     padding: 0 15px;
+    max-height: 200px;
+    overflow-y: auto;
 }
 .record-list > li {
     margin: 5px 0;

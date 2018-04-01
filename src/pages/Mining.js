@@ -1,11 +1,29 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 
-import { Button } from 'antd-mobile';
+import { Button,Modal } from 'antd-mobile';
 
 import './Mining.css';
 
 class Mining extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            modal1: false
+        }
+    }
+
+    showModal = key => (e) => {
+        e.preventDefault(); // 修复 Android 上点击穿透
+        this.setState({
+            [key]: true
+        })
+    }
+    onClose = key => (e) => {
+        this.setState({
+            [key]: false
+        })
+    }
 
     render() {
         const rankings = [
@@ -24,8 +42,20 @@ class Mining extends Component {
                     </div>
                 </div>
                 <div className="btn-area">
-                    <Button type="ghost" size="small" inline className="get-power" >获取体力</Button>
-                    <Button type="ghost" size="small" inline className="coffers-link">个人金库</Button>
+                    <Button type="ghost" size="small" inline className="bbc-btn-ghost get-power"
+                        onClick={this.showModal('modal1')} >获取体力</Button>
+                    <Modal
+                        visible={this.state.modal1}
+                        transparent
+                        onClose={this.onClose('modal1')}
+                        footer={[{ text: 'Ok', onPress: () => { this.onClose('modal1')(); } }]}
+                        >
+                        <div style={{ height: 100, overflow: 'scroll', lineHeight: '100px', fontSize: 18 }}>
+                            该功能暂不开放
+                        </div>
+                    </Modal>
+                    <Button type="ghost" size="small" inline className="bbc-btn-ghost coffers-link" 
+                        onClick={() => this.props.history.push("/coffers")}>个人金库</Button>
                 </div>
                 <div className="ranking-list">
                     <div className="table">

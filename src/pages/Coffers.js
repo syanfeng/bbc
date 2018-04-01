@@ -51,7 +51,12 @@ class Coffers extends Component {
         ];
         const records = [
             { id:1, date: '2018-03-31 10:10:01', type: '兑换', bbc: '-10.000000' },
-            { id:2, date: '2018-03-31 10:10:01', type: '兑换', bbc: '-10.000000' }
+            { id:2, date: '2018-03-31 10:10:01', type: '兑换', bbc: '-10.000000' },
+            { id:3, date: '2018-03-31 10:10:01', type: '兑换', bbc: '-10.000000' },
+            { id:4, date: '2018-03-31 10:10:01', type: '兑换', bbc: '-10.000000' },
+            { id:5, date: '2018-03-31 10:10:01', type: '兑换', bbc: '-10.000000' },
+            { id:6, date: '2018-03-31 10:10:01', type: '兑换', bbc: '-10.000000' },
+            { id:7, date: '2018-03-31 10:10:01', type: '兑换', bbc: '-10.000000' },
         ]
         const goods = [
             {id: '001', thumb: require('../assets/imgs/phone.png'), name: 'KD876', marketPrice: '￥1666元',promotionPrice: '￥1382元+600积分'},
@@ -65,15 +70,15 @@ class Coffers extends Component {
                     <div className="user-pic">
                         <img src={require('../assets/imgs/pic.png')} />
                     </div>
-                    <Flex.Item>
-                        <h4>BBC余额：46416</h4>
+                    <Flex.Item style={{fontSize: '12px', lineHeight: '18px'}}>
+                        <h4 >BBC余额：<span>46416</span></h4>
                         <p>挖矿</p>
                     </Flex.Item>
-                    <div>挖矿</div>
+                    <Button type="primary"  size="small" onClick={() => this.props.history.push("/mining")}>挖矿</Button>
                 </Flex> 
                 <Grid data={data} onClick={_el => this.gridOnClick(_el)}/>
                 <div className="record-container">
-                    <h3 className="record-header">交易记录</h3>
+                    <h3 className="record-title">交易记录</h3>
                     <ul className="record-list">
                         <li className="record-list-hd">
                             <ul>
@@ -82,6 +87,8 @@ class Coffers extends Component {
                                 <li>BBC</li>
                             </ul>
                         </li>
+                    </ul>
+                    <ul className="record-list">
                         {records.map((record) => 
                             <li className="record-list-item" key={record.id}>
                                 <ul>

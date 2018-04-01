@@ -1,0 +1,38 @@
+/* bbc 自定义样式 */
+.bbc-btn {
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    background: #fff;
+    margin: 0 auto;
+}
+.bbc-btn::before {
+    border-radius: 25px;
+}
+.bbc-btn-blue {
+    background: #10bb9d;
+    border-color: #10bb9d;
+    color: #fff;
+}
+.bbc-btn-blue.am-button-active {
+    background: #0ca88c;
+    border-color: #0ca88c;
+}
+.bbc-btn-ghost {
+    border-color: #0ca88c;
+    color: #0ca88c;
+}
+.bbc-btn-ghost.am-button-active {
+    border-color: #10bb9d;
+    color: #10bb9d;
+}
+@media (-webkit-min-device-pixel-ratio: 2), not all, (min-resolution: 2dppx) {
+    html:not([data-scale]) .bbc-btn-ghost::before {
+        border: 1PX solid #0ca88c;
+        border-radius: 50px;
+    }
+    html:not([data-scale]) .bbc-btn-ghost.am-button-active::before {
+        border: 1PX solid #10bb9d;
+        border-radius: 50px;
+    }
+}

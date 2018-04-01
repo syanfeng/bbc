@@ -14,22 +14,5 @@
     margin-right: 20px;
 }
 
-.bbc-btn {
-    display: block;
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    text-align: center;
-    background: #fff;
-    margin: 0 auto;
-}
-.bbc-btn-blue {
-    background: #10bb9d;
-    border-color: #10bb9d;
-    color: #fff;
-}
-.bbc-btn-blue.am-button-active {
-    background: #0ca88c;
-    border-color: #0ca88c;
-}
+
 

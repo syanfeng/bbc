@@ -1,12 +1,34 @@
 
 import React, { Component } from 'react';
+import ClipboardJS from 'clipboard';
 
-import { Button } from 'antd-mobile';
+import { Button,Toast } from 'antd-mobile';
 
 import './Receiveable.css';
 import Header2 from '../components/Header2';
 
+var clipboard;
 class Receiveable extends Component {
+
+    componentDidMount() {
+        clipboard = new ClipboardJS('.copy');
+        clipboard.on('success', function(e) {
+            console.info('Action:', e.action);
+            console.info('Text:', e.text);
+            console.info('Trigger:', e.trigger);
+            Toast.success('Copied!', 1.5);
+            e.clearSelection();
+        });
+        clipboard.on('error', function(e) {
+            console.error('Action:', e.action);
+            console.error('Trigger:', e.trigger);
+            Toast.fail('Copy failed!', 1.5);
+        });
+    }
+
+    componentWillUnmount() {
+        clipboard.destroy();
+    }
     
     render() {
         return (
@@ -16,11 +38,11 @@ class Receiveable extends Component {
                     <div className="title">
                         <Button type="ghost" size="small" className="">TOKEN</Button>
                     </div>
-                    <div className="text">
-                        1234567890
+                    <div className="text" id="token">
+                        123456789012dfsdfsfsdf3456789012345678901234567890
                     </div>
                     <div >
-                        <Button type="warning" size="small" className="">复制</Button>
+                        <Button type="warning" size="small" className="copy" data-clipboard-target="#token">复制</Button>
                     </div>
                 </div>
             </div>
