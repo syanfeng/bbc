@@ -12,6 +12,7 @@ class PrivateRoute extends React.Component {
     }
 
     render() {
+        Cookie.set('isAuthenticated', true)
         const { component: Component, ...rest } = this.props;
         const isAuthenticated = JSON.parse(Cookie.get('isAuthenticated'));
         return (

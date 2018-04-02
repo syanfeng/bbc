@@ -5,7 +5,7 @@ import ClipboardJS from 'clipboard';
 import { Button,Toast } from 'antd-mobile';
 
 import './Receiveable.css';
-import Header2 from '../components/Header2';
+import Header2 from '../../components/Header2';
 
 var clipboard;
 class Receiveable extends Component {

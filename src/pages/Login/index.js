@@ -5,7 +5,7 @@ import { Button, WhiteSpace,WingBlank, InputItem, Checkbox } from 'antd-mobile';
 
 import './Login.css';
 
-import Header from '../components/Header';
+import Header from '../../components/Header';
 
 const AgreeItem = Checkbox.AgreeItem;
  

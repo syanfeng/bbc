@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 import { Button, Flex, Grid, List, Tabs } from 'antd-mobile';
 
 import './Coffers.css';
-import biaoqianIcon from '../assets/imgs/biaoqian.svg'
-import paymentcon from '../assets/imgs/payment.svg'
-import exchangeIcon from '../assets/imgs/exchange.svg'
-import tixianIcon from '../assets/imgs/tixian.svg'
+import biaoqianIcon from '../../assets/imgs/biaoqian.svg'
+import paymentcon from '../../assets/imgs/payment.svg'
+import exchangeIcon from '../../assets/imgs/exchange.svg'
+import tixianIcon from '../../assets/imgs/tixian.svg'
 
-import Header from '../components/Header';
+import Header from '../../components/Header';
 
 const Item = List.Item;
 const Brief = Item.Brief;
@@ -58,16 +58,16 @@ class Coffers extends Component {
             { id:7, date: '2018-03-31 10:10:01', type: '兑换', bbc: '-10.000000' },
         ]
         const goods = [
-            {id: '001', thumb: require('../assets/imgs/phone.png'), name: 'KD876', marketPrice: '￥1666元',promotionPrice: '￥1382元+600积分'},
-            {id: '002', thumb: require('../assets/imgs/phone.png'), name: 'KD876', marketPrice: '￥1666元',promotionPrice: '￥1382元+600积分'},
-            {id: '003', thumb: require('../assets/imgs/phone.png'), name: 'KD876', marketPrice: '￥1666元',promotionPrice: '￥1382元+600积分'},
+            {id: '001', thumb: require('../../assets/imgs/phone.png'), name: 'KD876', marketPrice: '￥1666元',promotionPrice: '￥1382元+600积分'},
+            {id: '002', thumb: require('../../assets/imgs/phone.png'), name: 'KD876', marketPrice: '￥1666元',promotionPrice: '￥1382元+600积分'},
+            {id: '003', thumb: require('../../assets/imgs/phone.png'), name: 'KD876', marketPrice: '￥1666元',promotionPrice: '￥1382元+600积分'},
         ]
         return (
             <div className="coffers-container">
                 <Header title="个人金库" /> 
                 <Flex className="coffers-header" align="start">
                     <div className="user-pic">
-                        <img src={require('../assets/imgs/pic.png')} />
+                        <img src={require('../../assets/imgs/pic.png')} />
                     </div>
                     <Flex.Item style={{fontSize: '12px', lineHeight: '18px'}}>
                         <h4 >BBC余额：<span>46416</span></h4>

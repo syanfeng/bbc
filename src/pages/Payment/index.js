@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import { Button, InputItem, WingBlank} from 'antd-mobile';
 
 import './Payment.css';
-import passwordIcon from '../assets/imgs/password.svg'
-import identityIcon from '../assets/imgs/identity.svg'
+import passwordIcon from '../../assets/imgs/password.svg'
+import identityIcon from '../../assets/imgs/identity.svg'
 
-import Header2 from '../components/Header2';
+import Header2 from '../../components/Header2';
 
 class Payment extends Component {
 

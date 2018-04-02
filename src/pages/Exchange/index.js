@@ -4,9 +4,8 @@ import { Button, WhiteSpace, WingBlank } from 'antd-mobile';
 
 import './Exchange.css';
 
-import Header from '../components/Header';
-import ListInputItem from '../components/ListInputItem';
-
+import Header from '../../components/Header';
+import ListInputItem from '../../components/ListInputItem';
 
 class Exchange extends Component {
     
