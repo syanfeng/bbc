@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Button, Icon, WingBlank } from 'antd-mobile';
+import { Icon } from 'antd-mobile';
 
 import './Header.css';
 

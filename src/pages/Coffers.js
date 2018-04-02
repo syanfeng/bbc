@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom'
 
-import { Button, Flex, Grid, WingBlank, List, Tabs } from 'antd-mobile';
+import { Button, Flex, Grid, List, Tabs } from 'antd-mobile';
 
 import './Coffers.css';
 import biaoqianIcon from '../assets/imgs/biaoqian.svg'

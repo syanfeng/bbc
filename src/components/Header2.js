@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import { Button, Icon, WingBlank } from 'antd-mobile';
-
 import './Header2.css';
 
 import Header from './Header';

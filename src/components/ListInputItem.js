@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import { Button } from 'antd-mobile';
-
 import './ListInputItem.css';
 
 class ListInputItem extends Component {
