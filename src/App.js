@@ -21,11 +21,11 @@ class App extends Component {
             <Route exact path="/" component={Greeting}/>
             <Route path="/login" component={Login}/>
             <Route path="/greeting" component={Greeting}/>
-            <Route path="/coffers" component={Coffers}/>
+            <PrivateRoute path="/coffers" component={Coffers}/>
             <PrivateRoute path="/mining" component={Mining}/>
-            <Route path="/exchange" component={Exchange}/>
-            <Route path="/payment" component={Payment}/>
-            <Route path="/receiveable" component={Receiveable}/>
+            <PrivateRoute path="/exchange" component={Exchange}/>
+            <PrivateRoute path="/payment" component={Payment}/>
+            <PrivateRoute path="/receiveable" component={Receiveable}/>
         </Switch>
     );
   }
