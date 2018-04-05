@@ -17,7 +17,7 @@ class Mining extends Component {
                     id: 1,
                     value: 0.03121,
                     top: 100,
-                    left: 20
+                    left: 50
                 },
                 {
                     id: 2,
