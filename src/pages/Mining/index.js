@@ -5,11 +5,39 @@ import { Button,Modal } from 'antd-mobile';
 
 import './Mining.css';
 
+import Star from '../../components/Star'
+
 class Mining extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            modal1: false
+            modal1: false,
+            jewels: [
+                {
+                    id: 1,
+                    value: 0.03121,
+                    top: 100,
+                    left: 20
+                },
+                {
+                    id: 2,
+                    value: 0.03121,
+                    top: 50,
+                    left: 250
+                },
+                {
+                    id: 3,
+                    value: 0.03121,
+                    top: 20,
+                    left: 130
+                },
+                {
+                    id: 4,
+                    value: 0.03121,
+                    top: 200,
+                    left: 150
+                }
+            ]
         }
     }
 
@@ -24,6 +52,14 @@ class Mining extends Component {
             [key]: false
         })
     }
+    jewelClick(jewel) {
+        let jewelArr = this.state.jewels;
+        let index = jewelArr.findIndex(item => item.id === jewel.id);
+        jewelArr.splice(index, 1);
+        this.setState({
+            jewels: jewelArr
+        });
+    }
 
     render() {
         const rankings = [
@@ -33,12 +69,20 @@ class Mining extends Component {
         return (
             <div className="mining-container">
                 <div className="star-area">
+                    <Star height="350" />
                     <div className="top-left">
-                        <span className="star-label">BBC:</span>
+                        <span className="star-label">ETD:</span>
                         <span className="star-value">27.74479</span>
                     </div>
                     <div className="top-right">
                         <Link to="/bbccheats">BBC秘籍</Link>
+                    </div>
+                    <div className="jewels">
+                    {this.state.jewels.map(jewel => 
+                        <div className="jewel" key={jewel.id} style={{top: jewel.top, left: jewel.left}} onClick={() => this.jewelClick(jewel)}>
+                            <span className="jewel-text">{jewel.value}</span>
+                        </div>
+                    )}
                     </div>
                 </div>
                 <div className="btn-area">

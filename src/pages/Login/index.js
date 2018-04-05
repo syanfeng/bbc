@@ -32,7 +32,9 @@ class Login extends Component {
                     <AgreeItem className="remember" data-seed="logId" onChange={e => console.log('checkbox', e)}>
                         记住本次登录
                     </AgreeItem>
-                    <WingBlank><Button type="primary">立即登录</Button></WingBlank>
+                    <WingBlank>
+                        <Button type="primary" onClick={() => this.props.history.push('/mining')}>立即登录</Button>
+                    </WingBlank>
                 </div>
                 <WhiteSpace size="lg"/>
                 <WingBlank>

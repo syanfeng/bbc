@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {Link} from 'react-router-dom'
 import { Icon } from 'antd-mobile';
 
 import './Header.css';
@@ -18,6 +18,7 @@ class Header extends Component {
         }
         // 默认菜单事件
         // TODO
+        this.props.history.push('/login')
     }
     
     render() {
@@ -32,9 +33,10 @@ class Header extends Component {
                     <Icon type="left" />
                 </a>
                 <div className="title">{this.props.title}</div>
-                <a href="javascript:void(0)" className="menu" onClick={(e) => this.menuClick(e)}>
+                <Link to="/login" className="menu">{leftDom}</Link>
+                {/* <a href="javascript:void(0)" className="menu" onClick={(e) => this.menuClick(e)}>
                     {leftDom}
-                </a>
+                </a> */}
             </header>
         )
     }
